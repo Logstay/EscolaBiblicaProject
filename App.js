@@ -1,20 +1,30 @@
 import React from 'react';
-import { ApplicationProvider, Layout, Button } from '@ui-kitten/components';
-import { mapping, dark as darkTheme } from '@eva-design/eva';
-import { default as appTheme } from './src/assets/custom-theme.json'; // <-- Import app theme
-
-const theme = { ...darkTheme, ...appTheme };
+import { ApplicationProvider, IconRegistry, Layout, Text } from '@ui-kitten/components';
+import { EvaIconsPack } from '@ui-kitten/eva-icons';
+import { mapping, light as lightTheme } from '@eva-design/eva';
+import { Button, Icon } from '@ui-kitten/components';
 
 const HomeScreen = () => (
   <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-    <Button>HOME</Button>
+    <Text catetory='h1'>HOME</Text>
   </Layout>
 );
 
+export const FacebookIcon = (style) => (
+  <Icon name='facebook' {...style} />
+);
+
+export const LoginButton = () => (
+  <Button icon={FacebookIcon}>Login with Facebook</Button>
+);
+
 const App = () => (
-  <ApplicationProvider mapping={mapping} theme={theme}>
-    <HomeScreen/>
-  </ApplicationProvider>
+  <React.Fragment>
+    <IconRegistry icons={EvaIconsPack} />
+    <ApplicationProvider mapping={mapping} theme={lightTheme}>
+      <HomeScreen />
+    </ApplicationProvider>
+  </React.Fragment>
 );
 
 export default App;
