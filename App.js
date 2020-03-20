@@ -1,7 +1,7 @@
 import React from 'react';
 import { ApplicationProvider, Layout, Button } from '@ui-kitten/components';
 import { mapping, dark as darkTheme } from '@eva-design/eva';
-import { default as appTheme } from './src/assets/custom-theme'; // <-- Import app theme
+import { default as appTheme } from './src/assets/custom-theme.json'; // <-- Import app theme
 
 const theme = { ...darkTheme, ...appTheme };
 

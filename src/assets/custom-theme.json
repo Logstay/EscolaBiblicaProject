@@ -1,9 +1,4 @@
-import { default } from '@eva-design/eva';
-
-export const myTheme = {
-  
-  ...default,
-
+{
   "color-primary-100": "#D6E4FF",
   "color-primary-200": "#ADC8FF",
   "color-primary-300": "#84A9FF",
@@ -91,14 +86,13 @@ export const myTheme = {
   "color-basic-1000": "#1F1F1F",
   "color-basic-1100": "#141414",
   "color-basic-transparent-100": "rgba(128, 128, 128, 0.08)",
-  "color-basic-transparent-200": "rgba(128, 128, 128, 0.16)",
-  "color-basic-transparent-300": "rgba(128, 128, 128, 0.24)",
-  "color-basic-transparent-400": "rgba(128, 128, 128, 0.32)",
-  "color-basic-transparent-500": "rgba(128, 128, 128, 0.4)",
-  "color-basic-transparent-600": "rgba(128, 128, 128, 0.48)",
-  "background-basic-color-1": "$color-basic-700", // <- 800 by default
-  "background-basic-color-2": "$color-basic-800", // <- 900 by default
-  "background-basic-color-3": "$color-basic-900", // <- etc
+   "color-basic-transparent-200": "rgba(128, 128, 128, 0.16)",
+   "color-basic-transparent-300": "rgba(128, 128, 128, 0.24)",
+   "color-basic-transparent-400": "rgba(128, 128, 128, 0.32)",
+   "color-basic-transparent-500": "rgba(128, 128, 128, 0.4)",
+   "color-basic-transparent-600": "rgba(128, 128, 128, 0.48)",
+   "background-basic-color-1": "$color-basic-700", 
+  "background-basic-color-2": "$color-basic-800", 
+  "background-basic-color-3": "$color-basic-900", 
   "background-basic-color-4": "$color-basic-1000"
-
-};
+}
