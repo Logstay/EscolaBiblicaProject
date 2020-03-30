@@ -16,7 +16,7 @@
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-svg": "^9.13.6"
-    "mem": ">=4.0.0"
+    
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
